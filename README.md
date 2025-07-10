@@ -1,10 +1,11 @@
 # Customer Churn Predictor 📊
 
-Machine learning project to predict customer churn using the Telco Customer Churn dataset, with an interactive demonstration component.
+Machine learning project to predict customer churn using the Telco Customer Churn dataset, with an interactive demonstration component. 
+Available @ https://predictchurn.juleslemee.com
 
 ## Project Overview
 
-This project analyzes customer churn patterns in telecommunications data to build predictive models that identify customers likely to cancel their service. Originally developed as a group project for TECH 207, it includes both analytical insights and an interactive component for real-time predictions.
+This project analyzes customer churn patterns in telecommunications data to build predictive models that identify customers likely to cancel their service. Originally developed as a group project for a pandas-focused programming class, it includes both analytical insights and an interactive component for real-time predictions.
 
 ## Dataset
 
@@ -85,5 +86,8 @@ python dashboard.py
 - Deploy as web application
 
 ## Contributors
+Jules Lemée
+Maxence Dhondt
+Cyprien Boustiha
+Sandrine Trinh
 
-Group project for TECH 207 - Machine Learning Applications
