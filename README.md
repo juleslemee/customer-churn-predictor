@@ -4,13 +4,27 @@ Machine learning project predicting telecommunications customer churn with inter
 
 **🌐 Live Demo:** https://predictchurn.juleslemee.com
 
-![Churn Analysis](20704plot.png)
+## What It Does
 
-## Project Overview
+The Customer Churn Predictor helps telecommunications companies identify customers likely to cancel their service. Users answer 4 simple questions about their subscription, and the ML model instantly predicts their churn probability.
 
-This project investigates customer churn in telecommunications through machine learning techniques, developed and presented at HEC Montréal under AI Scientist Jonathan Moatti's oversight. We analyzed IBM's sample dataset using scikit-learn, pandas, and matplotlib, applying advanced techniques like SMOTE (Synthetic Minority Oversampling Technique) for handling imbalanced data.
+![App Interface](interface.png)
 
-The project combines rigorous data science methodology with practical application through an interactive Flask web application that predicts churn likelihood for individual customers.
+*Interactive web interface allowing real-time churn predictions*
+
+![Data Analysis](20704plot.png)
+
+*Statistical analysis and model visualization*
+
+## Why This Project Exists
+
+**The Problem:** Telecommunications companies lose billions annually due to customer churn. Identifying at-risk customers early allows companies to take proactive retention measures, potentially saving thousands in lost revenue per customer.
+
+**Our Solution:** This project demonstrates how machine learning can solve real business problems by predicting churn probability based on simple customer characteristics. Instead of waiting for customers to leave, companies can identify and engage at-risk customers proactively.
+
+**Academic Context:** Developed and presented at HEC Montréal under AI Scientist Jonathan Moatti's oversight, this project showcases practical application of data science techniques including SMOTE, logistic regression, and interactive web deployment.
+
+**Personal Learning Goals:** This project allowed our team to experience the full data science pipeline - from raw data cleaning to deployed web application - while solving a genuine business challenge faced by telecommunications companies worldwide.
 
 ## Dataset
 
@@ -57,29 +71,63 @@ Built with Python's Flask library, the web interface allows users to:
 - Electronic check payment correlates with higher churn
 - Fiber optic internet customers show higher churn (possibly due to service issues)
 
+## Key Features
+
+✅ **Real-time Predictions** - Instant churn probability calculation  
+✅ **User-friendly Interface** - Simple 4-question form  
+✅ **Production Ready** - Deployed with custom domain  
+✅ **Proven Accuracy** - 80% accuracy on non-churn, 70% on churn cases  
+✅ **Academic Rigor** - SMOTE technique for handling imbalanced data  
+✅ **Full Documentation** - Complete analysis in Jupyter notebook  
+
 ## Project Structure
 
 ```
 customer-churn-predictor/
-├── data/                 # Raw and processed datasets
-├── notebooks/            # Jupyter notebooks for analysis
-├── models/              # Saved ML models
-├── dashboard/           # Interactive prediction interface
-└── presentation/        # Class presentation materials
+├── app.py                # Main Flask application
+├── api/                  # Vercel serverless functions
+├── templates/            # HTML templates
+├── static/              # CSS stylesheets
+├── bigfile.ipynb       # Complete data analysis
+├── requirements.txt     # Python dependencies
+└── interface.png        # App screenshot
 ```
 
-## Usage
+## How to Get It Running
 
-### Running the Analysis
+### Prerequisites
+- Python 3.8+ installed on your system
+- Git for cloning the repository
+
+### Installation & Setup
+
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/juleslemee/customer-churn-predictor.git
+   cd customer-churn-predictor
+   ```
+
+2. **Install Dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Run the Web Application**
+   ```bash
+   python app.py
+   ```
+
+4. **Access the Interface**
+   Open your browser and visit: `http://localhost:5000`
+
+### Optional: Jupyter Analysis
+To explore the data analysis and model development:
 ```bash
-jupyter notebook analysis.ipynb
+jupyter notebook bigfile.ipynb
 ```
 
-### Running the Interactive Web App
-```bash
-python app.py
-```
-Then visit http://localhost:5000 to use the churn predictor.
+### Using the Live Demo
+Skip local setup entirely by visiting the live version: https://predictchurn.juleslemee.com
 
 ## Results
 
