@@ -14,7 +14,7 @@ The Customer Churn Predictor helps telecommunications companies identify custome
 
 ![Data Analysis](20704plot.png)
 
-*Statistical analysis and model visualization*
+*Statistical analysis and model visualization, which we used to shape the questions that would be asked in the web interface*
 
 ## Why This Project Exists
 
@@ -145,8 +145,7 @@ Skip local setup entirely by visiting the live version: https://predictchurn.jul
 - **Deployment**: Custom domain hosting
 
 ## Contributors
-Jules Lemée
-Maxence Dhondt
-Cyprien Boustiha
-Sandrine Trinh
-
+- **Jules Lemée**
+- **Maxence Dhondt**
+- **Cyprien Boustiha**
+- **Sandrine Trinh**
