@@ -1,11 +1,16 @@
 # Customer Churn Predictor 📊
 
-Machine learning project to predict customer churn using the Telco Customer Churn dataset, with an interactive demonstration component. 
-Available @ https://predictchurn.juleslemee.com
+Machine learning project predicting telecommunications customer churn with interactive web interface for real-time predictions.
+
+**🌐 Live Demo:** https://predictchurn.juleslemee.com
+
+![Churn Analysis](20704plot.png)
 
 ## Project Overview
 
-This project analyzes customer churn patterns in telecommunications data to build predictive models that identify customers likely to cancel their service. Originally developed as a group project for a pandas-focused programming class, it includes both analytical insights and an interactive component for real-time predictions.
+This project investigates customer churn in telecommunications through machine learning techniques, developed and presented at HEC Montréal under AI Scientist Jonathan Moatti's oversight. We analyzed IBM's sample dataset using scikit-learn, pandas, and matplotlib, applying advanced techniques like SMOTE (Synthetic Minority Oversampling Technique) for handling imbalanced data.
+
+The project combines rigorous data science methodology with practical application through an interactive Flask web application that predicts churn likelihood for individual customers.
 
 ## Dataset
 
@@ -24,22 +29,26 @@ Using the [Telco Customer Churn dataset](https://www.kaggle.com/datasets/yeanzc/
 ## Technical Implementation
 
 ### Data Processing
-- Cleaned and preprocessed data using pandas
-- Handled missing values and categorical encoding
-- Feature engineering for improved predictions
+- **Data Cleaning**: Removed irrelevant variables and handled missing values
+- **Categorical Encoding**: Applied one-hot encoding to convert categorical variables into binary format
+- **Class Balancing**: Used SMOTE (Synthetic Minority Oversampling Technique) to address limited churn cases
+- **Threshold Optimization**: Adjusted classification threshold for optimal churn prediction
 
 ### Machine Learning Models
-Explored multiple algorithms with scikit-learn:
-- Logistic Regression (baseline)
+We chose **Logistic Regression** as our final model over Cox regression based on database constraints and project goals, achieving:
+- **80% accuracy** for non-churn prediction
+- **70% accuracy** for churn prediction
+
+Other models explored:
 - Random Forest
-- Gradient Boosting
+- Gradient Boosting  
 - Support Vector Machines
 
-### Interactive Component
-Built an interactive dashboard where users can:
-- Input their own service parameters
-- Get real-time churn predictions
-- Understand which factors contribute most to churn risk
+### Interactive Web Application
+Built with Python's Flask library, the web interface allows users to:
+- Input their telecommunications service parameters
+- Get real-time churn probability predictions
+- Experience the model that was demonstrated to classmates during our HEC Montréal presentation
 
 ## Key Findings
 
@@ -66,24 +75,26 @@ customer-churn-predictor/
 jupyter notebook analysis.ipynb
 ```
 
-### Running the Interactive Dashboard
+### Running the Interactive Web App
 ```bash
-python dashboard.py
+python app.py
 ```
+Then visit http://localhost:5000 to use the churn predictor.
 
 ## Results
 
-- Best model: Gradient Boosting with 82% accuracy
-- Precision: 79%
-- Recall: 85%
-- Successfully demonstrated live predictions in class
+- **Final Model**: Logistic Regression
+- **Non-Churn Accuracy**: 80%
+- **Churn Detection Accuracy**: 70%
+- **Key Achievement**: Successfully demonstrated live predictions to classmates at HEC Montréal
+- **Interactive Demo**: Deployed web application for real-time churn prediction
 
-## Future Improvements
+## Technologies Used
 
-- Implement deep learning models
-- Add customer segmentation analysis
-- Create retention strategy recommendations
-- Deploy as web application
+- **Data Science**: scikit-learn, pandas, matplotlib
+- **Machine Learning**: Logistic Regression, SMOTE
+- **Web Development**: Flask, HTML/CSS
+- **Deployment**: Custom domain hosting
 
 ## Contributors
 Jules Lemée
